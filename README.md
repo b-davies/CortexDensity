@@ -13,5 +13,5 @@ Model details are provided in the [ODD document](https://github.com/b-davies/Cor
 - Open the [FMODEL_OccupationVsAccumulation.nlogo](https://github.com/b-davies/CortexDensity/blob/master/FMODEL_OccupationVsAccumulation.nlogo) file in NetLogo
 - Select Tools > BehaviorSpace
 - For each model in the Behaviorspace window, select the model and click Run. Select Table Output and the number of cores you would like to run the model over (up to the maximum available on your machine), then click OK. Save the results using the default file name in the same location as the program files.*Note: occasionally NetLogo will not save these files using the default ".csv" suffix. If this occurs, wait until simulations are done, then edit filenames to include .csv suffix.*
--Open the [CORTEX_DENSITY.Rmd](https://github.com/b-davies/CortexDensity/blob/master/CORTEX_DENSITY.Rmd) in R Studio
+- Open the [CORTEX_DENSITY.Rmd](https://github.com/b-davies/CortexDensity/blob/master/CORTEX_DENSITY.Rmd) in R Studio
 - Select Run > Run All 
