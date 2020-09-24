@@ -1,5 +1,5 @@
 # FMODEL_OccupationVsAccumulation
-A simulation of the effects of movement tortuosity and frequency on lithic assemblage densities and cortex ratios. Built using the [NetLogo (6.1.2)](https://ccl.northwestern.edu/netlogo/) and analyzed using [0R (4.0.2)](https://cran.r-project.org/) and [R Studio (1.1.383)](https://rstudio.com/), this model is used in a forthcoming publication:
+A simulation of the effects of movement tortuosity and frequency on lithic assemblage densities and cortex ratios. Built using the [NetLogo (6.1.2)](https://ccl.northwestern.edu/netlogo/) and analyzed using [R (4.0.2)](https://cran.r-project.org/) and [R Studio (1.1.383)](https://rstudio.com/), this model is used in a forthcoming publication:
 
 Davies, B., M. Douglass, S. J. Holdaway, and P. C. Fanning. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Submitted to
 *Archaeological Review from Cambridge*.
