@@ -1,0 +1,42 @@
+---
+title: "Cortex Ratio and Density analysis"
+author: "Ben Davies"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+
+```{r}
+
+occupation<-read.csv("FMODEL_OccupationVsAccumulation OccupationModel-table.csv",stringsAsFactors = FALSE,skip=6)
+accumulation<-read.csv("FMODEL_OccupationVsAccumulation AccumulationModel-table.csv",stringsAsFactors = FALSE,skip=6)
+
+occ_a<-subset(occupation,walkers==100)
+occ_a<-subset(occ_a,carry_in==0)
+
+occ_b<-subset(occupation,walkers==100)
+occ_b<-subset(occ_b,carry_in==1)
+
+
+
+acc_a<-subset(accumulation,levy_mu==1)
+acc_a<-subset(acc_a,carry_in==0)
+
+acc_b<-subset(accumulation,levy_mu==1)
+acc_b<-subset(acc_b,carry_in==1)
+
+par(mfrow=c(1,2))
+plot(log(occ_a[,14]),occ_a[,11],pch=17,ylim=c(0,3),xlab="Log Artifacts in Window",ylab="Cortex Ratio", main="Occupation Model")
+points(log(occ_b[,14]),occ_b[,11],pch=2)
+
+
+plot(log(acc_a[,14]),acc_a[,11],pch=17,ylim=c(0,3),xlab="Log Artifacts in Window",ylab="Cortex Ratio",main="Accumulation Model")
+points(log(acc_b[,14]),acc_b[,11],pch=2)
+
+```
+
+
+
